@@ -1,1 +1,31 @@
-{}
+{
+    "asd": {
+        "codTransaccion": "asd",
+        "nroFormulario": "asd",
+        "codCampus": "asd",
+        "marca": "asd",
+        "categoria": "asd",
+        "tipo": "asd",
+        "valorUnitario": "asd",
+        "proveedor": "asd",
+        "nroSerial": "asd",
+        "empresaResponsable": "asd",
+        "estado": "asd",
+        "historial": []
+    },
+    "123": {
+        "codTransaccion": "123",
+        "nroFormulario": "123",
+        "codCampus": "123",
+        "marca": "123",
+        "categoria": "123",
+        "tipo": "123",
+        "valorUnitario": "123",
+        "proveedor": "123",
+        "nroSerial": "123",
+        "empresaResponsable": "123",
+        "estado": "123",
+        "historial": []
+    }
+
+}
