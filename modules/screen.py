@@ -8,10 +8,15 @@ def cleanScreen():
     else: # If it is windows then use the win's cls command
         os.system('cls')
 
-# Pause screen depending on wich OS you're using
 
+# Pause screen depending on wich OS you're using
 def pauseScreen():
     if sys.platform == 'linux':
         input('Press any key to continue...')
     else:
         os.system('pause')
+
+
+# Creates an space in the terminal
+def breakLine():
+    print("")
