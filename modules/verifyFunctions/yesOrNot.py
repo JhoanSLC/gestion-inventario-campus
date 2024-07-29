@@ -17,5 +17,8 @@ def verifyYesOrNot(msg : str) -> str:
             case "":
                 isThisRunning = False # Finish the while loop
                 return "Void"
+            case "e":
+                isThisRunning = False 
+                return "Cancel"
             case _:
                 print("invalid option, try again")

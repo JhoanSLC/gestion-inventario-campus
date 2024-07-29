@@ -23,7 +23,7 @@ def editAsset():
                 clean()
                 print(f"{k}") # Show the current option being iterated in the for loop
                 br()
-                message = "Press (Y) if you want to change this value\nPress (N) if you want to skip this value\nPress (ENTER) if you want to cancel"
+                message = "Press (Y) if you want to change this value\nPress (N) if you want to skip this value\nPress (ENTER) if you want to send the update\n Press (E) to cancel the update"
                 userYesOrNot = verifyYesOrNot(message) # Call the function that verifies the "yes or not" questions (modules.verifyFunctions.yesOrNot)
                 if userYesOrNot == "True":
                     clean()
@@ -36,8 +36,9 @@ def editAsset():
                         newValue = str(input()) # Ask the new string value
                         assetsData[codeToEdit][k] = newValue # Replace the current value with the new one
                 elif userYesOrNot == "Void": # If the verify yes or not function returns a "Void"
-                    return # Cancel the proccess qand return to the assets menu
-
+                    break # Cancel the proccess qand return to the assets menu
+                elif userYesOrNot == "Cancel":
+                    return
 
     updateFile("assets.json", assetsData) # Once all the process is finished update the assets.json with the new values        
 
