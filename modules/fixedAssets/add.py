@@ -1,12 +1,12 @@
 from modules.screen import cleanScreen as clean, pauseScreen as pause
 from modules.files import *
 
-# This function is used to insert an active from the user into the actives.json file
-def addActives():
+# This function is used to insert an active from the user into the assets.json file
+def addAsset():
     clean()
-    checkFile('actives.json') # Check if the actives.json exists and if it doesn't create it 
-    activesData = loadFile('actives.json') # Bring the json data into a variable
-    actives = { # Create the main structure our actives are going to have
+    checkFile('assets.json') # Check if the assets.json exists and if it doesn't create it 
+    assetsData = loadFile('assets.json') # Bring the json data into a variable
+    assets = { # Create the main structure our assets are going to have
         "transactionCode" : "",
         "formNumber" : "",
         "campusCode" : "",
@@ -21,7 +21,7 @@ def addActives():
         "history" : [],
     }
     numberOptions = ["transactionCode",'formNumber','campusCode','serialNumber',"unitValue"]
-    for item in actives: # Use a for loop to go through every structure's item 
+    for item in assets: # Use a for loop to go through every structure's item 
         if item != "history": # Checks the "history" so the for loop doesn't create an input for it
             if item in numberOptions:
                 while True:
@@ -30,7 +30,7 @@ def addActives():
                             clean()
                             newValue =  int(input(f'Enter {item}: ')) # Store the new value from an input for each item
                             if item == "transactionCode":
-                                if str(newValue) in activesData:
+                                if str(newValue) in assetsData:
                                     clean()
                                     print("This transactionCode already exists, please enter a new one")
                                     pause()
@@ -38,7 +38,7 @@ def addActives():
                                 else:
                                     break
                             break
-                        actives[item] = newValue # Update the main structure with the new value 
+                        assets[item] = newValue # Update the main structure with the new value 
                         break
                     except:
                         clean()
@@ -47,10 +47,10 @@ def addActives():
             else:
                 clean()
                 newValue =  input(f'Enter {item}: ') # Store the new value from an input for each item
-                actives[item] = newValue # Update the main structure with the new value
+                assets[item] = newValue # Update the main structure with the new value
     # Once the for loop ends
-    code = actives["transactionCode"] # Bring the transaction code that's going to be the main id for the json file
-    activesData.update({code : actives}) # Update the activesData we loaded from the json file
-    updateFile('actives.json', activesData) # Update the json file with the new active structure
+    code = assets["transactionCode"] # Bring the transaction code that's going to be the main id for the json file
+    assetsData.update({code : assets}) # Update the assetsData we loaded from the json file
+    updateFile('assets.json', assetsData) # Update the json file with the new assets structure
         
 
