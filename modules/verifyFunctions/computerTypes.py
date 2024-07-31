@@ -1,17 +1,17 @@
 from modules.screen import cleanScreen as clean, pauseScreen as pause, breakLine as br
 
-def verifyApplianceTypes() -> str:
+def verifyComputerTypes(mainItem : str) -> str:
     isThisRunning = True
     while isThisRunning:
         clean()
-        print("Please enter the type of appliance")
+        print("Please enter the type of computer equipment")
         br()
-        applianceOptions = ["Air conditioner", "printer","tv"]
-        for item in applianceOptions:
+        computerOptions = ["Monitor", "CPU","Keyboard","Mouse"]
+        for item in computerOptions:
             print(f'* {item}')
         userInput = str(input('\n')).lower()
         br()
-        for item in applianceOptions:
+        for item in computerOptions:
             if item.lower() == userInput.lower():
                 isThisRunning = False
                 return userInput

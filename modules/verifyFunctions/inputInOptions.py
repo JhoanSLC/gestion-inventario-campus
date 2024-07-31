@@ -9,7 +9,7 @@ def isInputInOptions(options : list, mainItem : str) -> str:
         print("Please type one of the following options")
         br()
         for item in options:
-            print(item)
+            print(f'* {item}')
         br()
         userInput = str(input()).lower()
         inputInOptions = False

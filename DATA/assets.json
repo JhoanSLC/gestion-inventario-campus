@@ -1,0 +1,44 @@
+{
+    "1": {
+        "transactionCode": 1,
+        "formNumber": 1,
+        "campusCode": 1,
+        "brand": "CompuMax",
+        "category": "appliance",
+        "type": "tv",
+        "unitValue": 555,
+        "provider": "555",
+        "serialNumber": 555,
+        "responsibleCompany": "555",
+        "status": "555",
+        "history": []
+    },
+    "2": {
+        "transactionCode": 2,
+        "formNumber": 2,
+        "campusCode": 2,
+        "brand": "lenovo",
+        "category": "appliance",
+        "type": "air conditioner",
+        "unitValue": 555,
+        "provider": "555",
+        "serialNumber": 55,
+        "responsibleCompany": "55",
+        "status": "55",
+        "history": []
+    },
+    "3": {
+        "transactionCode": 3,
+        "formNumber": 3,
+        "campusCode": 3,
+        "brand": "asus",
+        "category": "appliance",
+        "type": "tv",
+        "unitValue": 3463546,
+        "provider": "sassant",
+        "serialNumber": 1,
+        "responsibleCompany": " Yo",
+        "status": "depresive",
+        "history": []
+    }
+}
