@@ -23,7 +23,7 @@ def editAsset():
                 clean()
                 print(f"{k}") # Show the current option being iterated in the for loop
                 br()
-                message = "Press (Y) if you want to change this value\nPress (N) if you want to skip this value\nPress (ENTER) if you want to send the update\n Press (E) to cancel the update"
+                message = "Press (Y) if you want to change this value\nPress (N) if you want to skip this value\nPress (ENTER) if you want to send the update\nPress (E) to cancel the update"
                 userYesOrNot = verifyYesOrNot(message) # Call the function that verifies the "yes or not" questions (modules.verifyFunctions.yesOrNot)
                 if userYesOrNot == "True":
                     clean()

@@ -19,12 +19,12 @@ def deleteAsset():
         clean()
         print("This is all the information of the transaction code you typed")
         br()
-        for key in assetsData[codeToDelete]:
+        for key in assetsData[codeToDelete]: # Go through every key in the assets json file
             if key != "history":
-                print(f"{key} : {assetsData[codeToDelete][key]}")
+                print(f"{key} : {assetsData[codeToDelete][key]}") # Show the key being iterated and the value of that key
         br()
-        message = "Press (Y) if you want to delete this asset\nPress (N) if you don't want to delete this asset"
-        userYesOrNot = verifyYesOrNot(message)
+        message = "Press (Y) if you want to delete this asset\nPress (N) if you don't want to delete this asset" # Message that will be used with the function below
+        userYesOrNot = verifyYesOrNot(message) # Call the function wich verifies what the user typed when it has to be a yes or not
         if userYesOrNot != "True":
             clean()
             print("The asset will not be deleted...")

@@ -1,5 +1,7 @@
 from modules.screen import cleanScreen as clean, pauseScreen as pause
 from modules.files import *
+from modules.verifyFunctions.inputInOptions import isInputInOptions
+from modules.verifyFunctions.applianceTypes import verifyApplianceTypes
 
 # This function is used to insert an active from the user into the assets.json file
 def addAsset():
@@ -46,7 +48,15 @@ def addAsset():
                         pause()
             else:
                 clean()
-                newValue =  input(f'Enter {item}: ') # Store the new value from an input for each item
+                if item == "category":
+                    categoryOptions = ["Computer Equipment","Appliance"]
+                    newValue = isInputInOptions(categoryOptions,item)
+                elif item == "type":
+                    match assets["category"]:
+                        case "appliance":
+                            newValue = verifyApplianceTypes()
+                else:
+                    newValue =  input(f'Enter {item}: ') # Store the new value from an input for each item
                 assets[item] = newValue # Update the main structure with the new value
     # Once the for loop ends
     code = assets["transactionCode"] # Bring the transaction code that's going to be the main id for the json file
