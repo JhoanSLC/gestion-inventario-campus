@@ -21,15 +21,15 @@ def assetMenu():
         activeOptions = [['1.' ,'Add'], ['2.','Edit'], ['3.','Delete'], ['4.','Search'], ['5.','Return']] # Options the user can get in.
         print(tabulate(activeOptions, tablefmt='youtrack')) # Use tabulate to render a table using the options of the activeOptions list.
         selectedAct = str(input())
-        if selectedAct == "1": # If user's input is "1" then call the addActive function.
+        if selectedAct == "1": # If user's input is "1" then call the add asset function.
             addAsset()
-        elif selectedAct == "2": # If user's input is "2" then call the editActive function.
+        elif selectedAct == "2": # If user's input is "2" then call the edit asset function.
             editAsset()
-        elif selectedAct == "3":
+        elif selectedAct == "3": #If user's input is "3" then call the delete asset function
             deleteAsset()
-        elif selectedAct == "4":
+        elif selectedAct == "4": # If user's input is "4" then call the search asset function
             searchAsset()
-        elif selectedAct == "5":
+        elif selectedAct == "5": # If user's input is "5" then return to main menu
             return
             break
         else: # If the user doesn't type a valid option.
