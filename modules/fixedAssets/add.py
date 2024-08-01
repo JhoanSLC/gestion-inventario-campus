@@ -4,6 +4,7 @@ from modules.verifyFunctions.inputInOptions import isInputInOptions
 from modules.verifyFunctions.applianceTypes import verifyApplianceTypes
 from modules.verifyFunctions.verifyBrands import verifyBrands
 from modules.verifyFunctions.computerTypes import verifyComputerTypes
+from modules.verifyFunctions.verifyStatus import verifyStatus
 
 # This function is used to insert an active from the user into the assets.json file
 def addAsset():
@@ -55,6 +56,8 @@ def addAsset():
                 elif item == "category":
                     categoryOptions = ["Computer Equipment","Appliance"]
                     newValue = isInputInOptions(categoryOptions,item)
+                elif item == "status":
+                    newValue = verifyStatus()
                 elif item == "type":
                     match assets["category"]:
                         case "appliance":

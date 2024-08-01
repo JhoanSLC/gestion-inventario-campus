@@ -3,6 +3,7 @@ from modules.screen import cleanScreen as clean, pauseScreen as pause, breakLine
 from modules.fixedAssets.add import addAsset
 from modules.fixedAssets.edit import editAsset
 from modules.fixedAssets.delete import deleteAsset
+from modules.fixedAssets.search import searchAsset
 
 titleAsset = """
         ***************
@@ -27,7 +28,7 @@ def assetMenu():
         elif selectedAct == "3":
             deleteAsset()
         elif selectedAct == "4":
-            pass
+            searchAsset()
         elif selectedAct == "5":
             return
             break

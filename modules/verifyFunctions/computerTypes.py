@@ -1,6 +1,6 @@
 from modules.screen import cleanScreen as clean, pauseScreen as pause, breakLine as br
 
-def verifyComputerTypes(mainItem : str) -> str:
+def verifyComputerTypes() -> str:
     isThisRunning = True
     while isThisRunning:
         clean()
@@ -15,6 +15,5 @@ def verifyComputerTypes(mainItem : str) -> str:
             if item.lower() == userInput.lower():
                 isThisRunning = False
                 return userInput
-        br()
         print("Please verify your answer and try again...")
         pause()

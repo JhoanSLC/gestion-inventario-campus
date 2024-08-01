@@ -16,7 +16,7 @@ def editAsset():
         pause()
     else:
         clean()
-        nonEditableOptions = ["transactionCode","history"] # List of the options the user can't change
+        nonEditableOptions = ["transactionCode","history","category","type","status"] # List of the options the user can't change
         numberOptions : list = ["formNumber", "campusCode", "unitValue","serialNumber"] # List of number options
         for k in assetsData[codeToEdit]:
             if k not in nonEditableOptions: # Make sure the user is not able to change some options

@@ -23,6 +23,10 @@ def deleteAsset():
             if key != "history":
                 print(f"{key} : {assetsData[codeToDelete][key]}") # Show the key being iterated and the value of that key
         br()
+        if assetsData[codeToDelete]["status"] == "1":
+            print("You can't delete an assigned asset, if you want to delete this asset, you've got to unassigned it first")
+            pause()
+            return
         message = "Press (Y) if you want to delete this asset\nPress (N) if you don't want to delete this asset" # Message that will be used with the function below
         userYesOrNot = verifyYesOrNot(message) # Call the function wich verifies what the user typed when it has to be a yes or not
         if userYesOrNot != "True":

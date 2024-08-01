@@ -40,5 +40,61 @@
         "responsibleCompany": " Yo",
         "status": "depresive",
         "history": []
+    },
+    "5": {
+        "transactionCode": 5,
+        "formNumber": 5,
+        "campusCode": 5,
+        "brand": "hp",
+        "category": "computer equipment",
+        "type": "cpu",
+        "unitValue": 555,
+        "provider": "555",
+        "serialNumber": 555,
+        "responsibleCompany": "555",
+        "status": "555",
+        "history": []
+    },
+    "6": {
+        "transactionCode": 6,
+        "formNumber": 6,
+        "campusCode": 6,
+        "brand": "compumax",
+        "category": "appliance",
+        "type": "tv",
+        "unitValue": 666,
+        "provider": "666",
+        "serialNumber": 666,
+        "responsibleCompany": "666",
+        "status": "0",
+        "history": []
+    },
+    "77": {
+        "transactionCode": 77,
+        "formNumber": 77,
+        "campusCode": 77,
+        "brand": "logitech",
+        "category": "computer equipment",
+        "type": "monitor",
+        "unitValue": 777,
+        "provider": "777",
+        "serialNumber": 777,
+        "responsibleCompany": "777",
+        "status": "0",
+        "history": []
+    },
+    "888": {
+        "transactionCode": 888,
+        "formNumber": 888,
+        "campusCode": 888,
+        "brand": "logitech",
+        "category": "computer equipment",
+        "type": "monitor",
+        "unitValue": 888,
+        "provider": "888",
+        "serialNumber": 888,
+        "responsibleCompany": "888",
+        "status": "1",
+        "history": []
     }
 }
