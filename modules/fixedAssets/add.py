@@ -1,9 +1,9 @@
 from modules.screen import cleanScreen as clean, pauseScreen as pause
 from modules.files import *
 from modules.verifyFunctions.inputInOptions import isInputInOptions
-from modules.verifyFunctions.applianceTypes import verifyApplianceTypes
-from modules.verifyFunctions.verifyBrands import verifyBrands
-from modules.verifyFunctions.computerTypes import verifyComputerTypes
+from modules.verifyFunctions.fixedAssets.applianceTypes import verifyApplianceTypes
+from modules.verifyFunctions.fixedAssets.verifyBrands import verifyBrands
+from modules.verifyFunctions.fixedAssets.computerTypes import verifyComputerTypes
 from modules.verifyFunctions.verifyStatus import verifyStatus
 
 # This function is used to insert an active from the user into the assets.json file

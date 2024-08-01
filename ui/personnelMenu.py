@@ -1,5 +1,6 @@
 from tabulate import tabulate
 from modules.screen import cleanScreen as clean, pauseScreen as pause, breakLine as br
+from modules.personnel.add import addPersonnel
 
 titlePersonnel = """
         ******************
@@ -18,7 +19,7 @@ def personnelMenu():
         print(tabulate(personnelOptions, tablefmt='youtrack')) # Use tabulate to render a table using the options of the activeOptions list.
         selectedOp = str(input())
         if selectedOp == "1": # If user's input is "1" then call the addActive function.
-            pass
+            addPersonnel()
         elif selectedOp == "2": # If user's input is "2" then call the editActive function.
             pass
         elif selectedOp == "3":
